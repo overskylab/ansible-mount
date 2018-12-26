@@ -1,0 +1,10 @@
+---
+- name: Ensure the device mounted by fstab
+  mount:
+    fstab: "{{ mount_fstab_config_file_path }}"
+    path: "{{ item.path }}"
+    src: "{{ item.device }}"
+    fstype: "{{ item.fstype }}"
+    opts: "{{ item.options }}"
+    state: mounted
+  with_items: "{{ mount_lists }}"
