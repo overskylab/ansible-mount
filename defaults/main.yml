@@ -1,11 +1,11 @@
 ---
 mount_fstab_config_file_path: /etc/fstab
-mount_lists:
-  - device: /dev/sdf
-    path: /opt/example1
-    fstype: ext4
-    options: defaults
-  - device: /dev/sdg
-    path: /opt/example2
-    fstype: ext4
-    options: defaults,async
+# mount_lists:
+#   - device: /dev/sdf
+#     path: /opt/example1
+#     fstype: ext4
+#     options: defaults
+#   - device: /dev/sdg
+#     path: /opt/example2
+#     fstype: ext4
+#     options: defaults,async
