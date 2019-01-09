@@ -1,5 +1,6 @@
 ---
 mount_fstab_config_file_path: /etc/fstab
+mount_lost_and_found_dir_remove: yes
 # mount_lists:
 #   - device: /dev/sdf
 #     path: /opt/example1

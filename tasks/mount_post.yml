@@ -7,3 +7,4 @@
   when: 
     - mount_lists is defined
     - mount_result is succeeded
+    - mount_lost_and_found_dir_remove
