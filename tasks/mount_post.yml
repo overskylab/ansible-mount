@@ -1,1 +1,9 @@
 ---
+- name: Remove lost+found directory
+  file:
+    path: "{{ item.path }}/lost+found"
+    state: absent
+  with_items: "{{ mount_lists }}"
+  when: 
+    - mount_lists is defined
+    - mount_result is succeeded

@@ -8,4 +8,5 @@
     opts: "{{ item.options }}"
     state: mounted
   with_items: "{{ mount_lists }}"
+  register: mount_result
   when: mount_lists is defined
