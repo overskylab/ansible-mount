@@ -3,7 +3,7 @@
   mount:
     fstab: "{{ mount_fstab_config_file_path }}"
     path: "{{ item.path }}"
-    src: "{{ item.device }}"
+    src: "{{ item.src }}"
     fstype: "{{ item.fstype }}"
     opts: "{{ item.options }}"
     state: mounted
