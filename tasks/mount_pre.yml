@@ -1,8 +1,1 @@
 ---
-- name: Make filesystem
-  filesystem:
-    device: "{{ item.device }}"
-    fstype: "{{ item.fstype }}"
-    resizefs: "{{ item.resizefs | default('no') }}"
-  with_items: "{{ mount_devices }}"
-  when: mount_devices is defined

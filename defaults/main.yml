@@ -1,13 +1,6 @@
 ---
 mount_fstab_config_file_path: /etc/fstab
 mount_lost_and_found_dir_remove: yes
-# mount_devices:
-#   - device: /dev/nvme1n1
-#     fstype: ext4
-#     resizefs: no
-#   - device: /dev/nvme2n1
-#     fstype: ext4
-#     resizefs: no
 # mount_lists:
 #   - src: /dev/nvme1n1 # or UUID=xxxx-xx-xxxx-xxx
 #     path: /opt/example1
